@@ -14,7 +14,9 @@ function mouseOverBehaviour() {
     myElement = document.querySelector(".tiktok-jzplnh-DivMoreActions.e1pq4u0v6");
     document.getElementsByClassName('tiktok-51xc1n-DivActionItem ezky0yn2')[0].click()
     setTimeout(document.getElementsByClassName('ex1lhrj4 tiktok-10ecx0o-Button-StyledButtonBlock ehk74z00')[0].click(), 500);
+    setTimeout(function() { window.close(); }, 2000);
 }
+
 
 
 function addBlockButton() {
@@ -50,17 +52,17 @@ function checkKey(e) {
 }
 
 
-
-
 function blockAccount() {
     let user = document.getElementsByClassName("tiktok-1r8gltq-SpanUniqueId ec62sd1")[0].textContent
     let url = 'https://www.tiktok.com/@' + user;
     var userProfileTab = window.open(url, '', 'width=,height=,resizable=no');
-
+    let actualWindow = window.self
     userProfileTab.addEventListener('load', function() {
-        userProfileTab.focus();
+        /* userProfileTab.focus(); */
         userProfileTab.simulateMouseover();
     }, true);
+
+    actualWindow.focus();
 
 
 
