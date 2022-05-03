@@ -43,6 +43,8 @@ function checkKey(e) {
             isActive = true;
             addBlockButton()
         }
+    } else if (e.keyCode == '66') {
+        blockAccount()
     }
 
 }
