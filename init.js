@@ -19,7 +19,47 @@
         /*  setTimeout(window.open('', '_self').close(), 1500) */
 
     }
-    simulateMouseover()
+    /*     simulateMouseover() */
+
+    function addBlockButton() {
+        var btn = document.createElement("input");
+        btn.value = "Block";
+        btn.id = "search-mm-btn";
+        btn.type = "button";
+        btn.data = "feed-follow"
+        document.querySelector(".tiktok-7l7okx-DivInfoContainer.ec62sd0").appendChild(btn);
+        let button = document.getElementById("search-mm-btn");
+        button.classList.add("ec62sd6")
+        button.classList.add("tiktok-5xuix8-Button-StyledFollowButton")
+        button.classList.add("ehk74z00")
+        button.style = "margin-left:5px"
+        blockAccount()
+    }
+    document.onkeydown = checkKey;
+    let isActive = false;
+
+    function checkKey(e) {
+        e = e || window.event;
+        if (e.keyCode == '39') {
+            if (!isActive) {
+                isActive = true;
+                addBlockButton()
+            }
+        }
+
+    }
+
+    function blockAccount() {
+        let user = document.getElementsByClassName("tiktok-1r8gltq-SpanUniqueId ec62sd1")[0].textContent
+        let uri = 'https://www.tiktok.com/@' + user;
+        window.open(uri, '', 'width=,height=,resizable=no');
+        window.focus()
+    }
+
+
+
+
+
 
 
 
