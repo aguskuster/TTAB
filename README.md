@@ -15,4 +15,4 @@ Second is pressing the left arrow an a button call  " Block "  will be display n
 ## Process
 
 When you use the extension a mini tab will be displayed on the top of the window and it will close once the account is blocked.
-<p align="center"><img src="./images/icon_128.png" width="400"></a></p>
+<p align="center"><img src="./images/icon_128.png" width="100"></a></p>
