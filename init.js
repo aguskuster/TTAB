@@ -15,6 +15,7 @@ function mouseOverBehaviour() {
     document.getElementsByClassName('tiktok-51xc1n-DivActionItem ezky0yn2')[0].click()
     setTimeout(document.getElementsByClassName('ex1lhrj4 tiktok-10ecx0o-Button-StyledButtonBlock ehk74z00')[0].click(), 500);
     setTimeout(function() { window.close(); }, 2000);
+
 }
 
 
@@ -47,11 +48,10 @@ function checkKey(e) {
         }
     } else if (e.keyCode == '66') {
         blockAccount()
-        window.blur();
     }
 
-
 }
+
 
 
 function blockAccount() {
@@ -60,11 +60,8 @@ function blockAccount() {
     var userProfileTab = window.open(url, '', 'width=,height=,resizable=no');
 
     userProfileTab.addEventListener('load', function() {
-
+        userProfileTab.blur();
         userProfileTab.simulateMouseover();
     }, true);
-
-
-
 
 }
