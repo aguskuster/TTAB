@@ -1,6 +1,6 @@
 # Tiktok Account Blocker - TTAB
 
-A web extension to block all that account that you dont want to see in your fyp . 
+A web extension that blocks all accounts that you don't want to see in your fyp .
 
 ## Usage
 
