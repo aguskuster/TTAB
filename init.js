@@ -57,7 +57,7 @@ function checkKey(e) {
 function blockAccount() {
     let user = document.getElementsByClassName("tiktok-1r8gltq-SpanUniqueId ec62sd1")[0].textContent
     let url = 'https://www.tiktok.com/@' + user;
-    var userProfileTab = window.open(url, '', 'width=,height=,resizable=no');
+    var userProfileTab = window.open(url, '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=, height=, visible=none', '');
 
     userProfileTab.addEventListener('load', function() {
         userProfileTab.blur();
