@@ -7,10 +7,10 @@ A web extension to block all that account that you dont want to see in your fyp 
 There are two ways to use it 
 
 ```bash
-First is pressing the letter " B " 
+One is pressing the letter " B " 
 ```
 ```bash
-Second is pressing the left arrow an a button call  " Block "  will be display next to the follow button.
+And the other is pressing the left arrow an a button call  " Block "  will be display next to the follow button.
 ```
 ## Process
 
