@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "TTAB",
     "description": "Tiktok account blocker, in one click",
     "version": "1.0",
@@ -8,13 +8,7 @@
         "48": "./images/icon_48.png",
         "128": "./images/icon_128.png"
     },
-    "page_action": {
-        "default_icon": {
-            "16": "./images/icon_16.png",
-            "48": "./images/icon_48.png",
-            "128": "./images/icon_128.png"
-        }
-    },
+
     "content_scripts": [{
         "matches": ["https://www.tiktok.com/*"],
         "css": ["main.css"],

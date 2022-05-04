@@ -36,18 +36,20 @@ function addBlockButton() {
     })
 }
 document.onkeydown = checkKey;
-let isActive = false;
+
+
 
 function checkKey(e) {
     e = e || window.event;
     if (e.keyCode == '39') {
-        if (!isActive) {
-            isActive = true;
+        if (!document.getElementById('search-mm-btn')) {
             addBlockButton()
         }
     } else if (e.keyCode == '66') {
         blockAccount()
+        window.blur();
     }
+
 
 }
 
@@ -56,13 +58,12 @@ function blockAccount() {
     let user = document.getElementsByClassName("tiktok-1r8gltq-SpanUniqueId ec62sd1")[0].textContent
     let url = 'https://www.tiktok.com/@' + user;
     var userProfileTab = window.open(url, '', 'width=,height=,resizable=no');
-    let actualWindow = window.self
+
     userProfileTab.addEventListener('load', function() {
-        /* userProfileTab.focus(); */
+
         userProfileTab.simulateMouseover();
     }, true);
 
-    actualWindow.focus();
 
 
 
