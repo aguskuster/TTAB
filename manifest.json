@@ -12,13 +12,6 @@
     "content_scripts": [{
         "matches": ["https://www.tiktok.com/*"],
         "js": ["./js/init.js"]
-    }],
+    }]
 
-    "action": {
-        "default_popup": "./view/enableExtension.html"
-    },
-
-    "permissions": [
-        "activeTab"
-    ]
 }
