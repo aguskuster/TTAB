@@ -36,6 +36,8 @@ function addBlockButton() {
         blockAccount()
     })
 }
+
+
 document.onkeydown = checkKey;
 
 

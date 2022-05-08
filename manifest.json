@@ -11,6 +11,9 @@
 
     "content_scripts": [{
         "matches": ["https://www.tiktok.com/*"],
-        "js": ["init.js"]
-    }]
+        "js": ["./js/init.js"]
+    }],
+    "options_ui": {
+        "page": "./view/enableExtension.html"
+    }
 }
