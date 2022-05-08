@@ -37,8 +37,10 @@ function addBlockButton() {
     })
 }
 
-
+/* if (document.getElementById('checkbox')) { */
 document.onkeydown = checkKey;
+/* } */
+
 
 
 

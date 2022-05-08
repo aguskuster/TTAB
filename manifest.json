@@ -13,7 +13,12 @@
         "matches": ["https://www.tiktok.com/*"],
         "js": ["./js/init.js"]
     }],
-    "options_ui": {
-        "page": "./view/enableExtension.html"
-    }
+
+    "action": {
+        "default_popup": "./view/enableExtension.html"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
 }
