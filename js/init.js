@@ -1,21 +1,4 @@
-document.querySelector('checkbox').addEventListener('CheckboxStateChange', function() {
-    if (this.checked) {
-        chrome.storage.local.set({ "extension-is-active": true });
-    } else {
-        chrome.storage.local.set({ "extension-is-active": false });
-    }
-
-    chrome.storage.local.get(['extension-is-active'], function(result) {
-        if (result.key) {
-            document.onkeydown = checkKey;
-        }
-    });
-});
-
-saveUserDecision();
-
-
-
+document.onkeydown = checkKey;
 
 
 function checkKey(e) {
@@ -27,25 +10,6 @@ function checkKey(e) {
     } else if (e.keyCode == '66') {
         blockAccount()
     }
-
-}
-
-function saveUserDecision() {
-    chrome.storage.local.get(['extension-is-active'], function(result) {
-        if (result.key == null) {
-            chrome.storage.local.set({ "extension-is-active": false });
-        }
-    });
-
-
-    chrome.storage.local.get(['extension-is-active'], function(result) {
-        if (result.key) {
-            document.getElementById('checkbox').checked = true;
-        } else {
-            document.getElementById('checkbox').checked = false;
-        }
-    });
-
 
 }
 
