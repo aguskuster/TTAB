@@ -58,7 +58,7 @@ function simulateMouseover() {
 function mouseOverBehaviour() {
     myElement = document.querySelector(".tiktok-jzplnh-DivMoreActions.e1pq4u0v6");
     document.getElementsByClassName('tiktok-51xc1n-DivActionItem ezky0yn2')[0].click()
-    setTimeout(document.getElementsByClassName('ex1lhrj4 tiktok-10ecx0o-Button-StyledButtonBlock ehk74z00')[0].click(), 500);
+    setTimeout(document.querySelector(".e9flc1l4.tiktok-10ecx0o-Button-StyledButtonBlock.ehk74z00").click(), 500);
     setTimeout(function() { window.close(); }, 2000);
 
 }
