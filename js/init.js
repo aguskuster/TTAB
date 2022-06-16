@@ -20,19 +20,19 @@ function addBlockButton() {
     btn.id = "search-mm-btn";
     btn.type = "button";
     btn.data = "feed-follow"
-    document.querySelector(".tiktok-7l7okx-DivInfoContainer.e1a1jgwc0").appendChild(btn);
+    document.querySelector(".tiktok-7l7okx-DivInfoContainer.evv7pft0").appendChild(btn);
     let button = document.getElementById("search-mm-btn");
-    button.classList.add("ec62sd6")
+    button.classList.add("evv7pft6")
     button.classList.add("tiktok-5xuix8-Button-StyledFollowButton")
     button.classList.add("ehk74z00")
     button.style = "margin-left:5px"
     button.addEventListener("click", function(e) {
         blockAccount()
-    })
+    });
 }
 
 function blockAccount() {
-    let user = document.querySelector(".tiktok-1r8gltq-SpanUniqueId.e1a1jgwc1").textContent
+    let user = document.querySelector(".tiktok-1r8gltq-SpanUniqueId.evv7pft1").textContent
     let url = 'https://www.tiktok.com/@' + user;
     var userProfileTab = window.open(url, '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=, height=, visible=none', '');
 
