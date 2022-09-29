@@ -7,8 +7,12 @@ function checkKey(e) {
         if (!document.getElementById('search-mm-btn')) {
             addBlockButton()
         }
+        document.querySelector(".tiktok-8buonr-DivVideoContainer.e11s2kul27").style.transform = "rotate(0deg)";
     } else if (e.keyCode == '66') {
         blockAccount()
+    }
+    if(e.keyCode =='37'){
+        document.querySelector(".tiktok-8buonr-DivVideoContainer.e11s2kul27").style.transform = "rotate(-90deg)";
     }
 
 }
