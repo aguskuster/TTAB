@@ -4,13 +4,11 @@ A web extension that blocks all accounts that you don't want to see in your fyp 
 
 ## Usage
 
-There are two ways to use it 
-
 ```bash
-One is pressing the letter " B " 
+You can Block an account pressing the letter B
 ```
 ```bash
-And the other is pressing the left arrow an a button call  " Block "  will be display next to the follow button.
+Another recently function is that you can rotate tiktok that are design for mobile version with the arrows keys <- ->
 ```
 ## Process
 
