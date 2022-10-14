@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
     "name": "TTAB",
-    "description": "Tiktok account blocker, in one click",
+    "description": "Tiktok account blocker, in one click and screen rotator",
     "version": "1.0",
     "icons": {
-        "16": "./images/icon_16.png",
-        "48": "./images/icon_48.png",
-        "128": "./images/icon_128.png"
+        "16": "./images/16.png",
+        "48": "./images/48.png",
+        "128": "./images/128.png"
     },
 
     "content_scripts": [{
