@@ -7,12 +7,12 @@ function checkKey(e) {
         if (!document.getElementById('search-mm-btn')) {
             addBlockButton()
         }
-        document.querySelector(".tiktok-8buonr-DivVideoContainer.e11s2kul27").style.transform = "rotate(0deg)";
+        document.querySelector(".tiktok-1jxhpnd-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";
     } else if (e.keyCode == '66') {
         blockAccount()
     }
     if(e.keyCode =='37'){
-        document.querySelector(".tiktok-8buonr-DivVideoContainer.e11s2kul27").style.transform = "rotate(-90deg)";
+        document.querySelector(".tiktok-1jxhpnd-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";
     }
 
 }
@@ -61,6 +61,6 @@ function simulateMouseover() {
 
 function mouseOverBehaviour() {
     document.querySelector('.tiktok-51xc1n-DivActionItem.e1vhy9gd2').click()
-    setTimeout(document.querySelector(".e9flc1l5.tiktok-1oqlolq-Button-StyledButtonBlock.ehk74z00").click(), 500);
+    setTimeout(document.querySelector(".e9flc1l5.tiktok-4i0jhg-Button-StyledButtonBlock.ehk74z00").click(), 500);
     setTimeout(function() { window.close(); }, 2000);
 }
