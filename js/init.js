@@ -59,6 +59,7 @@ function simulateMouseover() {
 
 }
 
+
 function mouseOverBehaviour() {
     document.querySelector('.tiktok-51xc1n-DivActionItem.e1vhy9gd2').click()
     setTimeout(document.querySelector(".e9flc1l5.tiktok-4i0jhg-Button-StyledButtonBlock.ehk74z00").click(), 500);
