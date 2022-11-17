@@ -7,12 +7,12 @@ function checkKey(e) {
         if (!document.getElementById('search-mm-btn')) {
             addBlockButton()
         }
-        document.querySelector(".tiktok-1jxhpnd-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";
+        document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";
     } else if (e.keyCode == '66') {
         blockAccount()
     }
     if(e.keyCode =='37'){
-        document.querySelector(".tiktok-1jxhpnd-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";
+        document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";
     }
 
 }
