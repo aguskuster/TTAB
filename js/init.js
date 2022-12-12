@@ -1,6 +1,6 @@
 document.onkeydown = checkKey;
 
-
+//ja ja
 function checkKey(e) {
     e = e || window.event;
     if (e.keyCode == '39') {
