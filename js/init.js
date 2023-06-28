@@ -1,20 +1,20 @@
 document.onkeydown = checkKey;
 
-//ja ja
 function checkKey(e) {
     e = e || window.event;
     if (e.keyCode == '39') {
         if (!document.getElementById('search-mm-btn')) {
             addBlockButton()
         }
-        document.querySelector(".tiktok-1jxhpnd-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";/* Mensaje Directo */
+        document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";/* Mensaje Directo */
         document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";/* Pagina Principal */
     } else if (e.keyCode == '66') {
         blockAccount()
     }
-    if(e.keyCode =='37'){
-        document.querySelector(".tiktok-1jxhpnd-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Mensaje Directo */
-        document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Pagina Principal */
+    if(e.keyCode =='37'){    
+            document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Mensaje Directo */
+            document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Pagina Principal */    
+        
     }
 
 }
@@ -38,7 +38,7 @@ function addBlockButton() {
 }
 
 function blockAccount() {
-    let user = document.querySelector(".tiktok-1r8gltq-SpanUniqueId.evv7pft1").textContent
+    let user = document.querySelector(".tiktok-68jgkx-SpanUniqueId.evv7pft1").textContent
     let url = 'https://www.tiktok.com/@' + user;
     var userProfileTab = window.open(url, '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=, height=, visible=none', '');
 
