@@ -55,7 +55,7 @@ function simulateMouseover() {
         cancelable: true,
         view: window,
     });
-    var myTarget = document.querySelector(".tiktok-jzplnh-DivMoreActions.ee7zj8d6");
+    var myTarget = document.querySelector(".tiktok-usq6rj-DivMoreActions.ee7zj8d10");
     myTarget.dispatchEvent(event)
     mouseOverBehaviour();
 
