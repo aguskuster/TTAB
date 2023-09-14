@@ -26,7 +26,7 @@ function addBlockButton() {
     btn.id = "search-mm-btn";
     btn.type = "button";
     btn.data = "feed-follow"
-    document.querySelector(".tiktok-p11q58-DivInfoContainer.evv7pft0").appendChild(btn);
+    document.querySelector(".tiktok-85dfh6-DivInfoContainer.evv7pft0").appendChild(btn);
     let button = document.getElementById("search-mm-btn");
     button.classList.add("evv7pft6")
     button.classList.add("tiktok-5xuix8-Button-StyledFollowButton")
