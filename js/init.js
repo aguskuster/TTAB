@@ -38,7 +38,7 @@ function addBlockButton() {
 }
 
 function blockAccount() {
-    let user = document.querySelector(".tiktok-omuasp-SpanUniqueId.evv7pft1").textContent
+    let user = document.querySelector(".tiktok-1c7urt-SpanUniqueId.evv7pft1").textContent
     let url = 'https://www.tiktok.com/@' + user;
     var userProfileTab = window.open(url, '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=, height=, visible=none', '');
 
