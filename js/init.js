@@ -6,14 +6,14 @@ function checkKey(e) {
         if (!document.getElementById('search-mm-btn')) {
             addBlockButton()
         }
-        document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";/* Mensaje Directo */
-        document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";/* Pagina Principal */
+        document.querySelector(".css-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";/* Mensaje Directo */
+        document.querySelector(".css-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(0deg)";/* Pagina Principal */
     } else if (e.keyCode == '66') {
         blockAccount()
     }
     if(e.keyCode =='37'){    
-            document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Mensaje Directo */
-            document.querySelector(".tiktok-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Pagina Principal */    
+            document.querySelector(".css-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Mensaje Directo */
+            document.querySelector(".css-18e9va3-DivContainer.e1yey0rl0").style.transform = "rotate(-90deg)";/* Pagina Principal */    
         
     }
 
@@ -26,7 +26,7 @@ function addBlockButton() {
     btn.id = "search-mm-btn";
     btn.type = "button";
     btn.data = "feed-follow"
-    document.querySelector(".tiktok-85dfh6-DivInfoContainer.evv7pft0").appendChild(btn);
+    document.querySelector(".css-85dfh6-DivInfoContainer.evv7pft0").appendChild(btn);
     let button = document.getElementById("search-mm-btn");
     button.classList.add("evv7pft6")
     button.classList.add("tiktok-5xuix8-Button-StyledFollowButton")
@@ -38,7 +38,7 @@ function addBlockButton() {
 }
 
 function blockAccount() {
-    let user = document.querySelector(".tiktok-1c7urt-SpanUniqueId.evv7pft1").textContent
+    let user = document.querySelector(".css-1c7urt-SpanUniqueId.evv7pft1").textContent
     let url = 'https://www.tiktok.com/@' + user;
     var userProfileTab = window.open(url, '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=, height=, visible=none', '');
 
@@ -55,15 +55,15 @@ function simulateMouseover() {
         cancelable: true,
         view: window,
     });
-    var myTarget = document.querySelector(".tiktok-usq6rj-DivMoreActions.ee7zj8d10");
+    var myTarget = document.querySelector(".css-usq6rj-DivMoreActions.ee7zj8d10");
     myTarget.dispatchEvent(event)
     mouseOverBehaviour();
 
 }
 
-
 function mouseOverBehaviour() {
-    document.querySelector('.tiktok-51xc1n-DivActionItem.e1vhy9gd2').click()
-    setTimeout(document.querySelector(".e9flc1l5.tiktok-3yqenn-Button-StyledButtonBlock.ehk74z00").click(), 500);
+    document.querySelector(".css-51xc1n-DivActionItem.e1vhy9gd2").click()
+    setTimeout(document.querySelector(".e9flc1l5.css-3yqenn-Button-StyledButtonBlock.ehk74z00").click(), 500);
     setTimeout(function() { window.close(); }, 2000);
 }
+
